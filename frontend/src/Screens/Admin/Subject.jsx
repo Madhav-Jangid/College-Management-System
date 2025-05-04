@@ -84,17 +84,15 @@ const Subjects = () => {
         <Heading title="Add Subject" />
         <div className="flex justify-end items-center w-full">
           <button
-            className={`${
-              selected === "add" && "border-b-2 "
-            }border-blue-500 px-4 py-2 text-black rounded-sm mr-6`}
+            className={`${selected === "add" && "border-b-2 "
+              }border-blue-500 px-4 py-2 text-black rounded-sm mr-6`}
             onClick={() => setSelected("add")}
           >
             Add Subject
           </button>
           <button
-            className={`${
-              selected === "view" && "border-b-2 "
-            }border-blue-500 px-4 py-2 text-black rounded-sm`}
+            className={`${selected === "view" && "border-b-2 "
+              }border-blue-500 px-4 py-2 text-black rounded-sm`}
             onClick={() => setSelected("view")}
           >
             View Subject
@@ -108,7 +106,7 @@ const Subjects = () => {
               Enter Subject Code
             </label>
             <input
-              type="number"
+              // type="text"
               id="code"
               value={data.code}
               onChange={(e) => setData({ ...data, code: e.target.value })}
